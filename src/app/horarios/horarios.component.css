@@ -1,0 +1,11 @@
+#background{
+    background-color: #1f3c5c;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bdb09a;
+}
+.horario:hover {
+    font-size: 1.5rem;
+    color: #bdb09a;
+}

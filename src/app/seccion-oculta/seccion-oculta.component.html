@@ -1,0 +1,34 @@
+@if(contrasena === 34) {
+
+}@else {
+    <div>HOLA, POR FAVOR, INGRESE SU CONTRASENA</div>
+<input
+  type="text"
+  [(ngModel)]="entrada"
+  placeholder="introduce la contrasena"
+/>
+<button
+  class="btn btn-primary"
+  type="button"
+  (click)="contrasenaCorrecta(entrada)"
+>
+  Confirmar
+</button>
+}
+
+@if(contrasena === entrada){ Lorem ipsum dolor sit, amet consectetur adipisicing
+elit. Optio accusamus ea expedita illo, velit laborum reprehenderit odit quo
+atque consequatur? Fugit quia totam ipsam excepturi cum omnis fuga ut
+nesciunt!Loremlorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Repudiandae autem atque temporibus neque alias doloribus, eligendi, impedit sunt
+maxime magni, accusantium in suscipit laborum ea provident sequi illum
+perferendis quia! lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Numquam eaque dignissimos quis reiciendis odio placeat nam. Molestias pariatur,
+suscipit fugit fuga eaque voluptas deserunt ut earum maxime praesentium rerum
+adipisci? 
+<app-galeria/>
+} 
+@if (contraIncorrecta) {
+    LO SENTIMOS. TU CONTRASENA ES INCORRECTA. POR FAVOR INTENTELO DE NUEVO MAS TARDE.
+}
+

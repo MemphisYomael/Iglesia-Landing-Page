@@ -1,0 +1,81 @@
+<section>
+  <div
+    class="container d-flex justify-content-center align-items-center m-auto"
+  >
+    <h3 class="mt-5 h1 text-center">NUESTROS SERMONES</h3>
+  </div>
+
+  <!--Div General que que abraza todo-->
+  <div>
+    <!--Div de la primera linea-->
+    <div class="row mx-3">
+      <!-- Utilizando *ngFor para iterar sobre las llaves -->
+      @for (llave of obtenerLlaves(); track llave) {
+      <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card mt-5 mb-5 mx-auto card1" style="width: 17rem">
+          <iframe
+            class="card1"
+            [src]="obtenerURLSeguro(tarjetas[llave].linkSermon)"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            alt="..."
+          ></iframe>
+          <div class="card-body">
+            <h5 class="card-title h-25">{{ tarjetas[llave].tituloSermon }}</h5>
+            <p class="card-text h-25">
+              {{ tarjetas[llave].informacionSermon }}
+            </p>
+            <a
+              [href]="tarjetas[llave].linkAudio"
+              target="_blank"
+              class="btn btn-primary mb-1 h-25"
+              >Audio</a
+            >
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+
+  @if(activarAcceso){
+  <form
+    class="d-grid justify-content-between align-items-center my-4 w-50 mx-auto"
+    (submit)="guardarSermon($event)"
+  >
+    <input
+      type="text"
+      class="form-control me-2"
+      [(ngModel)]="linkSer"
+      name="linkSer"
+      placeholder="link sermon"
+    />
+    <input
+      type="text"
+      class="form-control me-2"
+      [(ngModel)]="tituloSer"
+      name="tituloSer"
+      placeholder="Titulo del sermon"
+    />
+    <input
+      type="text"
+      class="form-control me-2"
+      [(ngModel)]="informacionSer"
+      name="informacionSer"
+      placeholder="Informacion del Sermon"
+    />
+    <input
+      type="text"
+      class="form-control me-2"
+      [(ngModel)]="linkMp3"
+      name="linkMp3"
+      placeholder="link Mp3 del sermon"
+    />
+    <button type="submit" class="btn btn-info ms-4">Guardar Sermon</button>
+  </form>
+
+  }
+</section>

@@ -1,0 +1,26 @@
+section {
+    background-color: #1f3c5c; 
+    
+}
+
+.card1 {
+    border-radius: 1.1rem 1.1rem;
+    background-color: #fff;
+}
+.card1 iframe {
+    border-radius: 1.1rem 1.1rem 0rem 0rem;
+}
+h3 {
+    color: #17a3b3;
+    border-color: hsl(38, 21%, 67%);
+    border-width: 3px;
+    border-style:solid;
+    border-radius: 2rem;
+    padding: 1.3rem;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+}
+h4 {
+    color: #fff;
+    
+}

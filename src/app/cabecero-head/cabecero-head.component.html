@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg" id="borde">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-between">
+      <a class="navbar-brand" href="#">
+        <img src="logo verdadero.png" id="imgHeader" class="col-3" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler m-auto"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          Comunidad de Gracia
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body fw-bold">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 small">
+          <li class="nav-item dropdown mx-lg-2" id="nosotrosDropdown">
+            <a
+              class="nav-link"
+              href="#"
+              role="button"
+              id="marinoLogo"
+              (click)="toggleDropdown($event)"
+            >
+              NOSOTROS <i class="bi bi-chevron-down dropdown-arrow"></i>
+            </a>
+            <ul class="dropdown-menu" id="nosotrosMenu">
+              <li>
+                <a class="dropdown-item" href="vision" id="marinologo">Visión</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="fe" id="marinologo">Creencia</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="pastores" id="marinologo">Pastores</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="servidores" id="marinologo">Servidores</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2 active" href="sermon" id="marinoLogo"
+              >SERMONES</a
+            >
+          </li>
+          <!-- <li class="nav-item">
+            <a
+              class="nav-link mx-lg-2 active"
+              aria-current="page"
+              href="galeria"
+              id="marinoLogo"
+              >GALERÍA</a
+            >
+          </li> -->
+          <li class="nav-item">
+            <a
+              class="nav-link mx-lg-2 active"
+              aria-current="page"
+              href="nuevo"
+              id="marinoLogo"
+              >SÉ PARTE</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2 active" href="donaciones" id="marinoLogo"
+              >DONACIONES</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

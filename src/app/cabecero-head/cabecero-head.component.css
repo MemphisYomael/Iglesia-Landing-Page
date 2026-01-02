@@ -1,0 +1,70 @@
+#borde {
+    border-style: solid;
+    border-color: #1f3c5c;
+    border-width: 0px 0px 1px 0px;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+#marine {
+    color: #bdb39c;
+}
+
+#marinologo:hover {
+    color: #17a3b3;
+}
+
+#blue {
+    color: #17a3b3;
+}
+
+#blueDiferent {
+    color: #2e9ea2;
+}
+
+#marinoLogo {
+    color: #1f3c5c;
+    font-size: 1.2rem;
+}
+
+#imgHeader {
+    width: 28vh;
+    margin-left: 1.2rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-arrow {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
